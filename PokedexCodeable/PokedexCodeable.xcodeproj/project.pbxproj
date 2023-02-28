@@ -16,6 +16,7 @@
 		AF3D983229AE66E400A13C2C /* PokedexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983129AE66E400A13C2C /* PokedexTableViewController.swift */; };
 		AF3D983629AE677C00A13C2C /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983529AE677C00A13C2C /* NetworkingController.swift */; };
 		AF3D983929AE689700A13C2C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983829AE689700A13C2C /* NetworkError.swift */; };
+		AF3D983B29AE6DE200A13C2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983A29AE6DE200A13C2C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AF3D983129AE66E400A13C2C /* PokedexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTableViewController.swift; sourceTree = "<group>"; };
 		AF3D983529AE677C00A13C2C /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		AF3D983829AE689700A13C2C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AF3D983A29AE6DE200A13C2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				AF3D981A29AE624F00A13C2C /* SceneDelegate.swift */,
 				AF3D982129AE625000A13C2C /* Assets.xcassets */,
 				AF3D982629AE625000A13C2C /* Info.plist */,
+				AF3D983A29AE6DE200A13C2C /* Constants.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				AF3D981929AE624F00A13C2C /* AppDelegate.swift in Sources */,
 				AF3D981B29AE624F00A13C2C /* SceneDelegate.swift in Sources */,
 				AF3D983929AE689700A13C2C /* NetworkError.swift in Sources */,
+				AF3D983B29AE6DE200A13C2C /* Constants.swift in Sources */,
 				AF3D982F29AE653D00A13C2C /* Pokemon.swift in Sources */,
 				AF3D983629AE677C00A13C2C /* NetworkingController.swift in Sources */,
 			);
