@@ -11,6 +11,5 @@ struct Constants {
     
     struct Pokemon {
         static let pokedexBaseURL = "https://pokeapi.co/api/v2/pokemon"
-        static let 
     }
 }
