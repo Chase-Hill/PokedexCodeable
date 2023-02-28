@@ -63,5 +63,22 @@ class NetworkingController {
     
     static func fetchSprite(for url: String, completion: @escaping (Result<UIImage, NetworkError>) -> Void) {
         
+        guard let finalURL = URL(string: url) else { completion(.failure(.invalidURL)) ; return }
+        
+        URLSession.shared.dataTask(with: finalURL) { data, response, error in
+            if let error = error {
+                completion(.failure(.thrownError(error))) ; return
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                print("Sprite Status Code: \(response.statusCode)")
+            }
+            
+            guard let data = data else { completion(.failure(.noData)) ; return }
+            
+            guard let sprite = UIImage(data: data) else { completion(.failure(.unableToDecode)) ; return }
+            
+            completion(.success(sprite))
+        } .resume()
     }
 }
