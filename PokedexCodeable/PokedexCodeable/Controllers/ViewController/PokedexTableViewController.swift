@@ -45,13 +45,10 @@ class PokedexTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "pokedexCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "pokedexCell", for: indexPath) as? PokemonTableViewCell else { return UITableViewCell() }
 
         let pokemon = pokedex[indexPath.row]
-        var config = cell.defaultContentConfiguration()
-        config.text = pokemon.name
-        config.secondaryText = pokemon.url
-        cell.contentConfiguration = config
+        cell.updateUI(forPokemon: pokemon)
 
         return cell
     }

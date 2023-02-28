@@ -17,6 +17,7 @@
 		AF3D983629AE677C00A13C2C /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983529AE677C00A13C2C /* NetworkingController.swift */; };
 		AF3D983929AE689700A13C2C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983829AE689700A13C2C /* NetworkError.swift */; };
 		AF3D983B29AE6DE200A13C2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983A29AE6DE200A13C2C /* Constants.swift */; };
+		AF3D983D29AE847400A13C2C /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D983C29AE847400A13C2C /* PokemonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AF3D983529AE677C00A13C2C /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		AF3D983829AE689700A13C2C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		AF3D983A29AE6DE200A13C2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF3D983C29AE847400A13C2C /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		AF3D981729AE624F00A13C2C /* PokedexCodeable */ = {
 			isa = PBXGroup;
 			children = (
+				AF3D983E29AE848C00A13C2C /* CustomCell */,
 				AF3D982C29AE626000A13C2C /* SupportingFiles */,
 				AF3D982D29AE627700A13C2C /* Storyboard */,
 				AF3D983029AE65CC00A13C2C /* Model */,
@@ -125,6 +128,14 @@
 				AF3D983829AE689700A13C2C /* NetworkError.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		AF3D983E29AE848C00A13C2C /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D983C29AE847400A13C2C /* PokemonTableViewCell.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF3D983229AE66E400A13C2C /* PokedexTableViewController.swift in Sources */,
+				AF3D983D29AE847400A13C2C /* PokemonTableViewCell.swift in Sources */,
 				AF3D981929AE624F00A13C2C /* AppDelegate.swift in Sources */,
 				AF3D981B29AE624F00A13C2C /* SceneDelegate.swift in Sources */,
 				AF3D983929AE689700A13C2C /* NetworkError.swift in Sources */,

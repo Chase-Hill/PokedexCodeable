@@ -16,13 +16,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pokedexCell" id="Iel-vK-Pd9">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pokedexCell" rowHeight="97" id="Iel-vK-Pd9" customClass="PokemonTableViewCell" customModule="PokedexCodeable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iel-vK-Pd9" id="h7K-ck-Riv">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="97"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="shq-rD-1rA">
+                                            <rect key="frame" x="89" y="11" width="284" height="75"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAY-ck-eLL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="284" height="33.666666666666664"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eql-Vy-rrf">
+                                                    <rect key="frame" x="0.0" y="41.666666666666657" width="284" height="33.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xij-eP-Pkh">
+                                            <rect key="frame" x="20" y="11" width="69" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="xij-eP-Pkh" secondAttribute="height" multiplier="1:1" id="1KZ-W1-NKe"/>
+                                                <constraint firstAttribute="width" constant="69" id="1LG-9y-SZO"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="shq-rD-1rA" secondAttribute="trailing" id="1MM-o8-i2J"/>
+                                        <constraint firstItem="shq-rD-1rA" firstAttribute="leading" secondItem="xij-eP-Pkh" secondAttribute="trailing" id="1RK-P0-6tJ"/>
+                                        <constraint firstItem="xij-eP-Pkh" firstAttribute="leading" secondItem="h7K-ck-Riv" secondAttribute="leadingMargin" id="2q6-1R-1gy"/>
+                                        <constraint firstItem="xij-eP-Pkh" firstAttribute="top" secondItem="h7K-ck-Riv" secondAttribute="topMargin" id="NT3-JY-Dpn"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="shq-rD-1rA" secondAttribute="bottom" id="Qbh-Dz-ljc"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xij-eP-Pkh" secondAttribute="bottom" id="YC6-nD-gov"/>
+                                        <constraint firstItem="shq-rD-1rA" firstAttribute="top" secondItem="h7K-ck-Riv" secondAttribute="topMargin" id="i60-qz-xv2"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pokemonIDLabel" destination="Eql-Vy-rrf" id="Gxq-mk-hna"/>
+                                    <outlet property="pokemonNameLabel" destination="XAY-ck-eLL" id="UuZ-tX-hLC"/>
+                                    <outlet property="pokemonSpriteImage" destination="xij-eP-Pkh" id="fIS-6A-Y4W"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
